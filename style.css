@@ -122,7 +122,6 @@ a {
   width: 500px;
   height: 500px;
 }
-
 .index-introduction h1 :hover {
   background-color: white;
   transition: all ease 0.8s;
@@ -155,9 +154,11 @@ a {
   align-items: center;
 }
 
-.secondary-index-intro #intro-down-arrow {
-  color: black;
+#intro-down-arrow {
+  width: 40px;
+  height: 40px;
 }
+
 .secondary-index-intro #intro-down-arrow:hover {
   display: flex;
   flex-direction: column;
@@ -557,15 +558,21 @@ footer {
   }
 
   .index-introduction .introduction {
+    margin-top: 5px;
     margin-left: 10px;
     margin-right: 10px;
     text-align: center;
+    font-size: 60%;
   }
 
   .index-introduction .salutation {
     margin-left: 10px;
     margin-right: 10px;
     text-align: center;
+  }
+
+  .index-introduction h5 {
+    font-size: 14px;
   }
 
   .introduction {
@@ -576,6 +583,30 @@ footer {
   .index-body img {
     width: 250px;
     height: 250px;
+  }
+
+  #intro-down-arrow {
+    width: 40px;
+    height: 40px;
+  }
+
+  .secondary-index-intro #intro-down-arrow:hover {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation: bounce 1s infinite;
+  }
+  @keyframes bounce {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-35px);
+    }
+    100% {
+      transform: translateY(0);
+    }
   }
 
   /**responsive about section*/
