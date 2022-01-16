@@ -1,0 +1,722 @@
+/**Shared for all. */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap");
+
+body {
+  font-family: "Montserrat";
+  scroll-behavior: smooth;
+  background-color: #f7f1f0;
+}
+
+::selection {
+  background: rgb(255, 255, 255);
+}
+
+hr {
+  color: #c3a6a0;
+}
+
+#page-title {
+  padding-top: 15px;
+}
+
+/** Shared for nav-bar*/
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  transition: all 0.5s;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: whitesmoke;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.navbar-home {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(92, 92, 92, 0);
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.navbar-logo {
+  padding-left: 50px;
+  padding-right: 50px;
+  font-weight: bold;
+  color: black;
+}
+
+.nav-links ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+}
+.nav-links li a {
+  padding-left: 50px;
+  padding-right: 50px;
+  font-weight: 400;
+  color: rgba(99, 97, 97, 0.767);
+}
+
+.nav-links a:hover {
+  color: black;
+}
+
+.toggle-button {
+  position: absolute;
+  top: 0.75rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+
+.toggle-button .toggle-bar {
+  height: 3px;
+  width: 100%;
+  background-color: black;
+  border-radius: 20px;
+}
+
+/**Shared for al buttons*/
+.button-class {
+  width: 200px;
+  border-radius: 5px;
+  border-color: #c3a6a0;
+  background-color: #c7ada8;
+  color: #f7f1f0;
+}
+.button-class:hover {
+  background-color: #a15c38;
+  border-color: #a15c38;
+}
+
+/**---index.html---*/
+
+.index-introduction {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.introduction {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.index-body img {
+  width: 500px;
+  height: 500px;
+}
+
+.index-introduction h1 :hover {
+  background-color: white;
+  transition: all ease 0.8s;
+}
+
+.index-introduction h1 b {
+  color: #a15c38;
+}
+
+.salutation {
+  display: flex;
+  flex-direction: row;
+}
+.salutation #type {
+  animation: blinking 0.9s infinite;
+}
+@keyframes blinking {
+  0% {
+    color: transparent;
+  }
+  100% {
+    color: black;
+  }
+}
+
+.secondary-index-intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.secondary-index-intro #intro-down-arrow {
+  color: black;
+}
+.secondary-index-intro #intro-down-arrow:hover {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  animation: bounce 1s infinite;
+}
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-100px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/*--- Shared for footer*/
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.socials-icons img {
+  width: 40px;
+  height: 40px;
+  padding: 5px;
+}
+.socials-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+/**---About Section---*/
+
+#about-section {
+  padding-top: 35px;
+}
+
+#banner {
+  background-color: #a15d38;
+  width: 100%;
+  color: #f7f1f0;
+  text-align: center;
+}
+
+#about-me-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#about-me-info img {
+  height: 200px;
+  width: 200px;
+}
+
+#background-info {
+  padding: 15px;
+}
+
+/**---Experience section---*/
+
+.experience-gallery {
+  text-align: center;
+}
+
+.experience-gallery img {
+  width: 25%;
+  height: 35%;
+  margin: calc(10% / 6);
+}
+
+/**-- CS Portfolio section */
+
+.cs-portfolio-intro {
+  text-align: center;
+  margin: 10px;
+}
+.cs-portfolio-sections {
+  display: flex;
+  flex-direction: column;
+}
+
+.section-intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 5px;
+}
+
+.cs-courses-section {
+  display: flex;
+  flex-direction: row;
+  background-color: rgba(255, 255, 255, 0.562);
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.cs-extracurr-section {
+  display: flex;
+  flex-direction: row;
+  background-color: rgba(255, 255, 255, 0.562);
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.cs-projects-section {
+  display: flex;
+  flex-direction: row;
+  background-color: rgba(255, 255, 255, 0.562);
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.cs-cv-section {
+  display: flex;
+  flex-direction: row;
+  background-color: rgba(255, 255, 255, 0.562);
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+/**---Skills section*/
+#skills-section {
+  text-align: center;
+}
+
+#up {
+  animation: up-anim 3.5s infinite;
+}
+
+@keyframes up-anim {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-7px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+#down {
+  animation: down-anim 3.1s infinite;
+}
+
+@keyframes down-anim {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(7px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+#rand {
+  animation: rand-anim 2s infinite;
+}
+
+@keyframes rand-anim {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/**---cs courses */
+.courses-block {
+  text-align: center;
+  margin: 10px;
+}
+
+/**--cs extracurriculars*/
+.extracurr-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.extracurr-container img {
+  margin: 10px;
+  width: 150px;
+  height: 150px;
+}
+
+.wicys-section {
+  display: flex;
+  flex-direction: row;
+  background-color: rgba(255, 255, 255, 0.562);
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.aecc-section {
+  display: flex;
+  flex-direction: row;
+  background-color: rgba(255, 255, 255, 0.562);
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.rtc-section {
+  display: flex;
+  flex-direction: row;
+  background-color: rgba(255, 255, 255, 0.562);
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.ccwri-section {
+  display: flex;
+  flex-direction: row;
+  background-color: rgba(255, 255, 255, 0.562);
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.lsls-section {
+  display: flex;
+  flex-direction: row;
+  background-color: rgba(255, 255, 255, 0.562);
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.iot-academy-section {
+  display: flex;
+  flex-direction: row;
+  background-color: rgba(255, 255, 255, 0.562);
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.honor-roll-section {
+  display: flex;
+  flex-direction: row;
+  background-color: rgba(255, 255, 255, 0.562);
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.pr-ideathon-section {
+  display: flex;
+  flex-direction: row;
+  background-color: rgba(255, 255, 255, 0.562);
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+/**-- cs projects--*/
+
+.proj-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.proj-container p {
+  margin: 5px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.proj-container img {
+  margin-top: 5px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 200px;
+  height: 150px;
+  border-radius: 2px;
+}
+
+.img-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.clue-section {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.npwee-section {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.infocheck-section {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.delacasa-section {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.gwars-section {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.monoloro-section {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.autopark-section {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+/** -------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/**Responsive nav bar*/
+@media (max-width: 950px) {
+  .toggle-button {
+    display: flex;
+  }
+
+  .nav-links {
+    display: none;
+    width: 100%;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar-home {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-links ul {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .nav-links ul li {
+    text-align: center;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-links li:hover {
+    background-color: #d3d2d24f;
+  }
+
+  /**responsive index*/
+  .index-introduction {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .index-introduction .introduction {
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+  }
+
+  .index-introduction .salutation {
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+  }
+
+  .introduction {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .index-body img {
+    width: 250px;
+    height: 250px;
+  }
+
+  /**responsive about section*/
+  #about-me-info {
+    text-align: center;
+    flex-direction: column;
+  }
+
+  /**responsive cs portfolio */
+
+  /**responsive cs portfolio sections*/
+
+  .button-class {
+    margin-bottom: 10px;
+  }
+  .section-intro {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .cs-portfolio-sections img {
+    margin-top: 5px;
+    width: 100px;
+    height: 100px;
+  }
+
+  .cs-courses-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cs-extracurr-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cs-projects-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cs-cv-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /**responsive cs courses*/
+  .courses-block li {
+    font-size: 85%;
+    padding-right: 32px;
+  }
+
+  /**responsive cs extracurriculars*/
+  .extracurr-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .extracurr-container img {
+    width: 110px;
+    height: 110px;
+  }
+
+  .wicys-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .aecc-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .rtc-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .ccwri-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .lsls-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .iot-academy-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .honor-roll-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .pr-ideathon-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /** esponsive poj*/
+  .proj-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .img-container img {
+    width: 250px;
+    height: 200px;
+  }
+
+  .img-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /**responsive footer*/
+  .socials-icons img {
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+  }
+}
