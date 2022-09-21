@@ -4,7 +4,7 @@
 body {
   font-family: "Montserrat";
   scroll-behavior: smooth;
-  background-color: #f7f1f0;
+  background-color: white;
 }
 
 ::selection {
@@ -93,13 +93,14 @@ a {
 .button-class {
   width: 200px;
   border-radius: 5px;
-  border-color: #c3a6a0;
-  background-color: #c7ada8;
+  border-color: #272932;
+  background-color: #272932;
   color: #f7f1f0;
 }
 .button-class:hover {
-  background-color: #a15c38;
-  border-color: #a15c38;
+  background-color: #dae2e7;
+  border-color: #dae2e7;
+  color: #272932
 }
 
 /**---index.html---*/
@@ -108,8 +109,7 @@ a {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 50px;
 }
 .introduction {
   display: flex;
@@ -117,18 +117,20 @@ a {
   justify-content: center;
   align-items: center;
   text-align: center;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 .index-body img {
   width: 500px;
   height: 500px;
 }
 .index-introduction h1 :hover {
-  background-color: white;
+  background-color: #272932;
   transition: all ease 0.8s;
 }
 
 .index-introduction h1 b {
-  color: #a15c38;
+  color: #758bfd;
 }
 
 .salutation {
@@ -201,46 +203,61 @@ footer {
 
 /**---About Section---*/
 
-#about-section {
-  padding-top: 35px;
+.secondary-index-intro{
+  padding-top: 50px;
+  padding-bottom: 55px;
 }
 
+#about-me-imgs{
+    padding: 15px;
+    box-align: center;
+  }
+
 #banner {
-  background-color: #a15d38;
-  width: 100%;
+  background-color: #758bfd;
   color: #f7f1f0;
+  width: 100%;
   text-align: center;
 }
 
 #about-me-info {
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  align-items: center;
+
 }
 
 #about-me-info img {
-  height: 200px;
-  width: 200px;
+  height: 350px;
+  padding: 10px;
+  width: 350px;
 }
 
 #background-info {
   padding: 15px;
-}
-
-/**---Experience section---*/
-
-.experience-gallery {
   text-align: center;
 }
 
-.experience-gallery img {
-  width: 25%;
-  height: 35%;
-  margin: calc(10% / 6);
+#background-info p {
+  text-align: left;
+}
+
+#about-n-experience-banner{
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 /**-- CS Portfolio section */
+
+#page-title:hover{
+  color:#758bfd;
+  transition-delay:0.4s;
+}
+
+.cs-doc{
+  padding-left: 10px;
+  padding-right: 10px;
+}
 
 .cs-portfolio-intro {
   text-align: center;
@@ -258,41 +275,27 @@ footer {
   margin: 5px;
 }
 
-.cs-courses-section {
+.cs-section {
   display: flex;
   flex-direction: row;
-  background-color: rgba(255, 255, 255, 0.562);
+  background-color: white;
   width: 100%;
-  margin-bottom: 10px;
-}
+  margin-bottom: 15px;
+  margin-left: 5px;
+  margin-right: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
 
-.cs-extracurr-section {
-  display: flex;
-  flex-direction: row;
-  background-color: rgba(255, 255, 255, 0.562);
-  width: 100%;
-  margin-bottom: 10px;
-}
-
-.cs-projects-section {
-  display: flex;
-  flex-direction: row;
-  background-color: rgba(255, 255, 255, 0.562);
-  width: 100%;
-  margin-bottom: 10px;
-}
-
-.cs-cv-section {
-  display: flex;
-  flex-direction: row;
-  background-color: rgba(255, 255, 255, 0.562);
-  width: 100%;
-  margin-bottom: 10px;
 }
 
 /**---Skills section*/
 #skills-section {
   text-align: center;
+}
+
+#skills-section img{
+  width: 100px;
+  height: 100px;
 }
 
 #up {
@@ -344,15 +347,34 @@ footer {
 }
 
 /**---cs courses */
+
+.courses-banner{
+  display: flex;
+  flex-direction: row;
+}
 .courses-block {
   text-align: center;
-  margin: 10px;
+  padding-left: 100px;
+  padding-right: 100px;
+
 }
+
+.courses-block li{
+  border-left: 2px solid red;
+  border-bottom: 1px solid #758bfd;
+  border-top:1px solid #758bfd;
+
+}
+
+
 
 /**--cs extracurriculars*/
 .extracurr-container {
   display: flex;
   flex-direction: column;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 5px;
 }
 
 .extracurr-container img {
@@ -361,68 +383,19 @@ footer {
   height: 150px;
 }
 
-.wicys-section {
+.extracurricular-section {
   display: flex;
   flex-direction: row;
   background-color: rgba(255, 255, 255, 0.562);
   width: 100%;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
 }
 
-.aecc-section {
-  display: flex;
-  flex-direction: row;
-  background-color: rgba(255, 255, 255, 0.562);
-  width: 100%;
-  margin-bottom: 10px;
-}
-
-.rtc-section {
-  display: flex;
-  flex-direction: row;
-  background-color: rgba(255, 255, 255, 0.562);
-  width: 100%;
-  margin-bottom: 10px;
-}
-
-.ccwri-section {
-  display: flex;
-  flex-direction: row;
-  background-color: rgba(255, 255, 255, 0.562);
-  width: 100%;
-  margin-bottom: 10px;
-}
-
-.lsls-section {
-  display: flex;
-  flex-direction: row;
-  background-color: rgba(255, 255, 255, 0.562);
-  width: 100%;
-  margin-bottom: 10px;
-}
-
-.iot-academy-section {
-  display: flex;
-  flex-direction: row;
-  background-color: rgba(255, 255, 255, 0.562);
-  width: 100%;
-  margin-bottom: 10px;
-}
-
-.honor-roll-section {
-  display: flex;
-  flex-direction: row;
-  background-color: rgba(255, 255, 255, 0.562);
-  width: 100%;
-  margin-bottom: 10px;
-}
-
-.pr-ideathon-section {
-  display: flex;
-  flex-direction: row;
-  background-color: rgba(255, 255, 255, 0.562);
-  width: 100%;
-  margin-bottom: 10px;
+.extracurricular-section:hover {
+  background-color: rgba(255, 255, 255, 0.84);
+  border: 1.5px solid #758cfdaf;
+  transition-delay: 0.3s;
 }
 
 /**-- cs projects--*/
@@ -454,61 +427,86 @@ footer {
   justify-content: center;
 }
 
-.clue-section {
+.nproject-section {
   display: flex;
   flex-direction: column;
   background-color: white;
   width: 100%;
   margin-bottom: 15px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+
 }
 
-.npwee-section {
-  display: flex;
-  flex-direction: column;
-  background-color: white;
-  width: 100%;
-  margin-bottom: 15px;
+.nproject-section:hover {
+  background-color: rgba(255, 255, 255, 0.84);
+  border: 1.5px solid #758cfdaf;
+  transition-delay: 0.3s;
 }
 
-.infocheck-section {
-  display: flex;
-  flex-direction: column;
-  background-color: white;
-  width: 100%;
-  margin-bottom: 15px;
+
+/** ----------------------------------------------------------------TIMELINE-------------------------------------------------------------------*/
+
+.timeline {
+  margin: 0 auto;
+  max-width: 750px;
+  padding: 25px;
+  display: grid;
+  grid-template-columns: 1fr 3px 1fr;
+  color: #272932;
 }
 
-.delacasa-section {
-  display: flex;
-  flex-direction: column;
-  background-color: white;
-  width: 100%;
-  margin-bottom: 15px;
+.timeline__component {
+  margin: 0 20px 20px 20px;
 }
 
-.gwars-section {
-  display: flex;
-  flex-direction: column;
-  background-color: white;
-  width: 100%;
-  margin-bottom: 15px;
+.timeline__component--bg {
+  padding: 1.5em;
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
 }
 
-.monoloro-section {
-  display: flex;
-  flex-direction: column;
-  background-color: white;
-  width: 100%;
-  margin-bottom: 15px;
+/* LEAVE TILL LAST */
+.timeline__component--bottom {
+  margin-bottom: 0;
 }
 
-.autopark-section {
-  display: flex;
-  flex-direction: column;
-  background-color: white;
-  width: 100%;
-  margin-bottom: 15px;
+.timeline__middle {
+  position: relative;
+  background: #758bfd;
 }
+
+.timeline__point {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 15px;
+  height: 15px;
+  background: #ffffff;
+  border-radius: 50%;
+}
+
+/* LEAVE TILL LAST */
+.timeline__point--bottom {
+  top: initial;
+  bottom: 0;
+}
+
+.timeline__date--right {
+  text-align: right;
+}
+
+.timeline__title {
+  margin: 0;
+  font-size: 1.15em;
+  font-weight: bold;
+}
+
+.timeline__paragraph {
+  line-height: 1.5;
+}
+
 
 /** -------------------------------------------------------------------------------------------------------------------------------------------*/
 
@@ -630,29 +628,11 @@ footer {
 
   .cs-portfolio-sections img {
     margin-top: 5px;
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
   }
 
-  .cs-courses-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .cs-extracurr-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .cs-projects-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .cs-cv-section {
+  .cs-section {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -678,49 +658,7 @@ footer {
     height: 110px;
   }
 
-  .wicys-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .aecc-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .rtc-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .ccwri-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .lsls-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .iot-academy-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .honor-roll-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .pr-ideathon-section {
+  .extracurricular-section {
     display: flex;
     flex-direction: column;
     align-items: center;
